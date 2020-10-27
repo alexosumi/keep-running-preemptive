@@ -51,7 +51,7 @@ $ npm start
 
 
 ### DOCKER
-**1** - Follow steps 1 ~ 6 from INTALL session
+**1** - Follow steps 1 ~ 6 from INSTALL session
 
 
 **2** - Build docker image:

@@ -35,3 +35,8 @@ $ cp -a .env.example .env
 ```sh
 $ npm install
 ```
+
+**7** - Run keep-running-preemptive:
+```sh
+$ npm start
+```

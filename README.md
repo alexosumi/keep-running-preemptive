@@ -1,2 +1,2 @@
 # keep-running-preemptive
-This project i begun to solve some problems with preempptive compute instance on gcp.
+This project was made to start a TERMINATED preemptive compute instance on gcp.

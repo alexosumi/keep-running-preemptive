@@ -58,7 +58,7 @@ $ npm start
 ```sh
 $ docker build . -t brandnew_keep-running-preemptive_image
 ```
-**3** - RUN:
+**3** - Run:
 ```sh
 $ docker run brandnew_keep-running-preemptive_image
 ```

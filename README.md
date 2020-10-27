@@ -41,10 +41,11 @@ $ npm install
 $ npm start
 ```
 #### DOCKER
-**1** - Follow steps 1 ~ 5 from INSTALL session
+**1** - Follow steps 1 ~ 5 from INTALL session
 
 **2** - Build docker image:
 ```sh
 $ docker build . 
 ```
 
+**note**: The Dockerfile in this project copy all files to docker image, fill free to change it as you need.

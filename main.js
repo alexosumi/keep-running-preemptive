@@ -58,7 +58,7 @@ async function main(){
         status()
     }
 
-        await sleep(process.env["SLEEP_TIME_MS"])
+        await sleep(process.env["SLEEP_TIME_MS"] || "300000")
     }
 }
 

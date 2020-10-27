@@ -1,4 +1,4 @@
-# keep-running-preemptive <img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="50">
+# keep-running-preemptive <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" width="50">
 This project was made to start a TERMINATED preemptive compute instance on Google Cloud Platform.
 
 

@@ -56,8 +56,24 @@ $ npm start
 
 **2** - Build docker image:
 ```sh
-$ docker build . 
+$ docker build . -t brandnew_keep-running-preemptive_image
 ```
-
-
+**3** - RUN:
+```sh
+$ docker run brandnew_keep-running-preemptive_image
+```
 **note**: The Dockerfile in this project copy all files to docker image, fill free to change it as you need.
+
+
+### KUBERNETES
+
+**1** - Follow steps 1 ~ 2
+
+
+**2** - Edit kubernetes/deploy.yaml to change docker image to yours
+
+
+**3** - Create Deployment resource:
+```sh
+$ kubectl create -f kubernetes/deploy.yaml -n yourNamespace
+```

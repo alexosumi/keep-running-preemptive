@@ -6,7 +6,7 @@ the goal of creating this project is that i need to have a good amount of gitlab
 
 
 
-#### INSTALL (Local Machine or VM)
+### INSTALL (Local Machine or VM)
 **1** - Create a custom and dedicated role with follow permissions(for security purposes):
  - compute.instances.get
  - compute.instances.list
@@ -50,7 +50,7 @@ $ npm start
 ```
 
 
-#### DOCKER
+### DOCKER
 **1** - Follow steps 1 ~ 6 from INTALL session
 
 

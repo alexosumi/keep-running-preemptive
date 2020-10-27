@@ -6,11 +6,7 @@ the goal of creating this project is that i need to have a good amount of gitlab
 
 
 
-<<<<<<< HEAD
-#### INSTALL (Local Machine or VM)
-=======
 ### INSTALL (Local Machine or VM)
->>>>>>> c0527e7a4e7fd2101a1cd109c1b188643c47c2c1
 **1** - Create a custom and dedicated role with follow permissions(for security purposes):
  - compute.instances.get
  - compute.instances.list
@@ -54,11 +50,7 @@ $ npm start
 ```
 
 
-<<<<<<< HEAD
-#### DOCKER
-=======
 ### DOCKER
->>>>>>> c0527e7a4e7fd2101a1cd109c1b188643c47c2c1
 **1** - Follow steps 1 ~ 6 from INSTALL session
 
 
@@ -68,8 +60,4 @@ $ docker build .
 ```
 
 
-<<<<<<< HEAD
 **note**: The Dockerfile in this project copy all files to docker image, fill free to change it as you need.
-=======
-**note**: The Dockerfile in this project copy all files to docker image, fill free to change it as you need.
->>>>>>> c0527e7a4e7fd2101a1cd109c1b188643c47c2c1

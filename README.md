@@ -4,7 +4,7 @@ This project was made to start a TERMINATED preemptive compute instance on Googl
 ## Purpose
 the goal of creating this project is that i need to have a good amount of gitlab-runners and the intance group didn’t suit me because it used a load balancer and the name of the machines and fingerprint change dynamically, so I decided to create an application that is monitoring the status of N compute engine and if any of them stay in a TERMINATED state the keep-running-preemptive will start this machine, and by using preemptive instances for workload that do not need 100% availability, we will save 80% in this group of machines.
 
-### INSTALL
+#### INSTALL
 **1** - Create an serviceaccount, follow the official doc from GCP to create a serviceaccount:
 https://cloud.google.com/iam/docs/creating-managing-service-accounts
 
@@ -40,3 +40,11 @@ $ npm install
 ```sh
 $ npm start
 ```
+#### DOCKER
+**1** - Follow steps 1 ~ 5 from INTALL session
+
+**2** - Build docker image:
+```sh
+$ docker build . 
+```
+

@@ -17,3 +17,11 @@ prefer to create a brand new and dedicated role with follow permissions(for secu
 2) After create serviceassount you need to generate a KEY, follow the doc to create a key:
 https://cloud.google.com/iam/docs/creating-managing-service-account-keys
 
+3) Download a serviceaccount JSON and move it to project folder with name credentials.json(or change name in .env file)
+
+4) create your .env file based on .env.example
+
+5) install dependencies: 
+```sh
+$ npm install
+```

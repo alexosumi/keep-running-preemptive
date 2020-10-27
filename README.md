@@ -27,9 +27,9 @@ $ cp -a .env.example .env
 ```
 
 **5** - .env explanation:
- - **GOOGLE_APPLICATION_CREDENTIALS** # credential name of serviceaccount (step 2)
- - **COMPUTE_ENGINE** # name of compute engine what need to be started, can be one compute engine or many
- - **SLEEP_TIME_MS** # check interval in milliseconds(1000 milliseconds = 1 second), default value is 300000(5 minutes)
+ - GOOGLE_APPLICATION_CREDENTIALS # credential name of serviceaccount (step 2)
+ - COMPUTE_ENGINE # name of compute engine what need to be started, can be one compute engine or many
+ - SLEEP_TIME_MS # check interval in milliseconds(1000 milliseconds = 1 second), default value is 300000(5 minutes)
 
 **6** - Install dependencies: 
 ```sh

@@ -4,7 +4,7 @@ const sleep = require('sleep-promise');
 const Collect = require('@supercharge/collections')
 const Compute = require('@google-cloud/compute');
 const compute = new Compute();
-var compute_group = process.env["COMPUTE_ENGINE"].split(' ')
+var compute_group = process.env["COMPUTE_ENGINE"].split(" ")
 
 async function compute_check(item) {
     try {
@@ -26,7 +26,7 @@ async function compute_status(item) {
         const aux = await vm.getMetadata()
         const metadata = aux[0]   
       
-        if (metadata.status == 'TERMINATED') {
+        if (metadata.status === 'TERMINATED') {
             console.log(`${metadata.name}: ${metadata.status}`)
             start()
         } else {
@@ -44,7 +44,7 @@ async function compute_status(item) {
 async function main(){
 
     for (var i = 0; i < compute_group.length; i++) {
-        if (await compute_check(compute_group[i]) != compute_group[i] ) {
+        if (await compute_check(compute_group[i]) !== compute_group[i] ) {
             delete compute_group[i] 
         }
     }
@@ -56,7 +56,7 @@ async function main(){
     while(true){
         compute_array.forEach(compute_status)
         console.log('-------------------------------------------')
-        await sleep(process.env["SLEEP_TIME_MS"])
+        await sleep(process.env['SLEEP_TIME_MS'] || '500000')
     }
 }
 

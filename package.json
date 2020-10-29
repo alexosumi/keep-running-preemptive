@@ -11,7 +11,6 @@
   "dependencies": {
     "@google-cloud/compute": "^2.3.0",
     "@supercharge/collections": "^3.0.0",
-    "asyncawait": "^3.0.0",
     "dotenv": "^8.2.0",
     "sleep-promise": "^9.0.0"
   }

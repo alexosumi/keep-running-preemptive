@@ -4,7 +4,7 @@ const sleep = require('sleep-promise');
 const Collect = require('@supercharge/collections')
 const Compute = require('@google-cloud/compute');
 const compute = new Compute();
-var compute_group = process.env["COMPUTE_ENGINE"].split(" ")
+compute_group = process.env["COMPUTE_ENGINE"].split(" ")
 
 async function compute_check(item) {
     try {
@@ -45,19 +45,29 @@ async function main(){
 
     for (var i = 0; i < compute_group.length; i++) {
         if (await compute_check(compute_group[i]) !== compute_group[i] ) {
-            delete compute_group[i] 
+            delete compute_group[i]
         }
     }
     
     compute_group = compute_group.filter(item => item)
     const compute_array = Collect(compute_group).unique().all()
     console.log(`monitoring compute engines status: ${compute_array}`)
+    
 
-    while(true){
-        compute_array.forEach(compute_status)
-        console.log('-------------------------------------------')
-        await sleep(process.env['SLEEP_TIME_MS'] || '500000')
+    var z = 0
+    while(z < 1){
+        if( compute_array.length != 0){
+            compute_array.forEach(compute_status)
+            console.log('-------------------------------------------')
+            await sleep(process.env['SLEEP_TIME_MS'] || '500000')
+        } else {
+            console.log('o array de máquinas está vazio: stopping')
+            z++
+            await sleep(process.env['SLEEP_TIME_MS'] || '500000')
+        }
+        
     }
 }
+
 
 main()

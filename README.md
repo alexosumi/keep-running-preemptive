@@ -11,7 +11,6 @@ the goal of creating this project is that i need to have a good amount of gitlab
  - compute.instances.get
  - compute.instances.list
  - compute.instances.start
- - compute.instances.stop
  - compute.zoneOperations.get
  - compute.zones.list
 

@@ -2,6 +2,5 @@
 .env2
 node_modules
 credentials.json
-main.js*
 teste.js
 teste*.js

@@ -2,16 +2,14 @@
   "name": "keep-running-preemptive",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node index.js"
   },
   "author": "Alex Osumi",
   "license": "MIT",
   "dependencies": {
     "@google-cloud/compute": "^2.3.0",
-    "@supercharge/collections": "^3.0.0",
-    "dotenv": "^8.2.0",
-    "sleep-promise": "^9.0.0"
+    "dotenv": "^8.2.0"
   }
 }
